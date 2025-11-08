@@ -1,0 +1,43 @@
+[project]
+name = "mpl"
+version = "0.1.0"
+description = "Multi-view 3D Pose Lifter"
+readme = "README.md"
+requires-python = ">=3.13"
+license = "MIT"
+authors = [
+    { name = "Abolfazl Ghasemzadeh" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "torch",
+    "torchvision",
+    "EasyDict",
+    "opencv-python",
+    "shapely",
+    "Cython",
+    "scipy",
+    "pandas",
+    "pyyaml",
+    "h5py",
+    "json_tricks",
+    "scikit-image",
+    "tensorboardX",
+    "pymvg",
+    "einops",
+    "timm",
+    "tqdm",
+]
+
+[tool.setuptools]
+include-package-data = true
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["MPL"]
