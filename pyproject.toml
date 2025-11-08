@@ -40,4 +40,4 @@ zip-safe = false
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["MPL"]
+include = ["mpl"]
